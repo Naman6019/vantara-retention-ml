@@ -1,0 +1,147 @@
+# Vantara Retail Solutions - Customer Behavior Prediction Platform Configuration
+# System & Pipeline Settings
+
+project:
+  name: "customer-behavior-prediction"
+  version: "1.0.0"
+  random_seed: 42
+
+paths:
+  raw_dir: "data/raw"
+  raw_file: "data/raw/online_retail_II.xlsx"
+  raw_zip: "data/raw/online_retail_ii.zip"
+  interim_dir: "data/interim"
+  processed_dir: "data/processed"
+  models_artifacts_dir: "models_artifacts"
+  logs_dir: "logs"
+
+dataset:
+  uci_id: 502
+  download_url: "https://archive.ics.uci.edu/static/public/502/online+retail+ii.zip"
+  sheets:
+    - "Year 2009-2010"
+    - "Year 2010-2011"
+  column_mapping:
+    "Invoice": "invoice"
+    "StockCode": "stock_code"
+    "Description": "description"
+    "Quantity": "quantity"
+    "InvoiceDate": "invoice_date"
+    "Price": "price"
+    "Customer ID": "customer_id"
+    "Country": "country"
+
+data_cleaning:
+  drop_missing_customer_id: true
+  exclude_admin_stock_codes:
+    - "POST"
+    - "D"
+    - "M"
+    - "BANK CHARGES"
+    - "PADS"
+    - "DOT"
+    - "CR"
+    - "ADJUST"
+    - "ADJUST2"
+  outliers:
+    quantity_max: 10000
+    quantity_min: -10000
+    price_max: 5000
+    price_min: 0.001
+
+features:
+  # Point-in-time cutoff settings for leak-free modeling
+  temporal:
+    # Churn / value horizon: label window is [T, T + churn_window_days)
+    churn_window_days: 90
+    # A customer is "active" (retention cohort) only with a purchase in [T - lookback, T)
+    active_lookback_days: 365
+    # Single-snapshot cutoff (used by the dashboard/API "as-of" view and the test cutoff)
+    # Dataset spans 2009-12-01 to 2011-12-09
+    cutoff_date: "2011-09-01"
+    # "Today" for live batch scoring (last date in the dataset)
+    live_scoring_date: "2011-12-09"
+    # Stacked monthly snapshots for leakage-safe, out-of-time evaluation (plan D1)
+    snapshots:
+      train_start: "2010-06-01"
+      train_end: "2011-03-01"
+      frequency: "MS"          # monthly, first day of month
+      validation: "2011-06-01"
+      test: "2011-09-01"
+      refit_end: "2011-06-01"  # production refit uses train_start .. refit_end
+  weights:
+    recency_weight: 0.4
+    frequency_weight: 0.3
+    monetary_weight: 0.3
+
+modeling:
+  train_val_test_split:
+    train_ratio: 0.70
+    val_ratio: 0.15
+    test_ratio: 0.15
+  cross_validation_folds: 5
+  churn_target_col: "is_churned"
+  clv_target_col: "future_clv"
+  # D4: calibration + operating threshold chosen on the validation snapshot
+  calibration:
+    method: "isotonic"
+    recall_target: 0.70
+  # D3: value model selects on validation MAE + top-decile value capture
+  value_capture_decile: 0.10
+  # Hyperparameter search budget (plan caps this at ~30 trials/model for speed)
+  search:
+    n_trials: 30
+
+segmentation:
+  kmeans_k_range: [2, 10]
+  features:
+    - "recency"
+    - "frequency"
+    - "monetary_total"
+    - "return_rate"
+    - "engagement_score"
+
+api:
+  host: "0.0.0.0"
+  port: 8000
+  reload: true
+
+serving:
+  # model_version stamped onto every persisted prediction
+  model_version: "1.1.0"
+
+monitoring:
+  # D7: PSI above this flags a feature as drifted
+  psi_threshold: 0.2
+
+recommendations:
+  # D5: rule table location; editable by marketing without code changes
+  rules_file: "config/recommendations.yaml"
+  # P4: product recommender, neighbour count chosen on the validation cutoff
+  top_k: 10
+  neighbour_grid: [20, 50, 100, 200]
+
+# Beyond PRD P3: budget-constrained campaign planning assumptions
+campaign:
+  default_budget: 5000.0
+  # Assumed save rate s: share of contacted churners retained. Unknown without
+  # experiment data, so a sensitivity grid is run over these values.
+  default_save_rate: 0.10
+  save_rate_grid: [0.05, 0.10, 0.20]
+  # Contact cost per channel (£)
+  channel_costs:
+    Account Manager: 45.0
+    Retention Desk: 25.0
+    "Email": 2.0
+    "Email (automated)": 1.0
+    "Loyalty Program": 3.0
+    "None": 0.0
+
+mlflow:
+  tracking_uri: "file:./mlruns"
+  experiment_name: "vantara-churn-clv"
+
+logging:
+  level: "INFO"
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  file: "logs/platform.log"

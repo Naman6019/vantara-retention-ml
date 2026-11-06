@@ -1,0 +1,109 @@
+{
+  "model_version": "1.1.0+6e44eef",
+  "generated_at": "2026-09-30T14:48:42.123628+00:00",
+  "churn_model": "Logistic Regression",
+  "churn_model_path": "models_artifacts/churn_best_model.joblib",
+  "churn_use_scaled": true,
+  "clv_model": "LightGBM Tweedie",
+  "clv_model_path": "models_artifacts/clv_best_model.joblib",
+  "clv_use_scaled": false,
+  "clv_needs_aux": true,
+  "clv_log_target": false,
+  "value_tier_quantiles": {
+    "low": 312.65,
+    "high": 935.0275
+  },
+  "segmentation_model": "K-Means",
+  "feature_cols": [
+    "frequency",
+    "total_items_bought",
+    "unique_skus_bought",
+    "monetary_total",
+    "recency",
+    "customer_age_days",
+    "monetary_avg",
+    "avg_basket_size",
+    "interpurchase_interval_mean",
+    "interpurchase_interval_std",
+    "purchase_frequency_trend",
+    "return_rate",
+    "cancellation_rate",
+    "seasonal_concentration",
+    "discount_sensitivity",
+    "is_uk_customer",
+    "engagement_score"
+  ],
+  "train_cutoffs": [
+    "2010-06-01",
+    "2010-07-01",
+    "2010-08-01",
+    "2010-09-01",
+    "2010-10-01",
+    "2010-11-01",
+    "2010-12-01",
+    "2011-01-01",
+    "2011-02-01",
+    "2011-03-01"
+  ],
+  "validation_cutoff": "2011-06-01",
+  "test_cutoff": "2011-09-01",
+  "decision_threshold": 0.670886,
+  "calibrator_path": "models_artifacts/churn_calibrator.joblib",
+  "reference_distribution_path": "models_artifacts/reference_distribution.json",
+  "value_capture_decile": 0.1,
+  "validation_metrics": {
+    "roc_auc": 0.7967,
+    "recall_at_threshold": 0.7081,
+    "precision_at_threshold": 0.8281,
+    "f1_at_threshold": 0.7634,
+    "calibrated_brier": 0.1682
+  },
+  "test_metrics": {
+    "roc_auc": 0.7559,
+    "recall": 0.7579,
+    "precision": 0.6722,
+    "f1_score": 0.7125,
+    "accuracy": 0.6914,
+    "threshold": 0.670886,
+    "calibrated_brier": 0.2143,
+    "operating_point": {
+      "threshold": 0.670886,
+      "accuracy": 0.6926,
+      "precision": 0.6885,
+      "recall": 0.7134,
+      "f1_score": 0.7007,
+      "confusion_matrix": [
+        [
+          1438,
+          704
+        ],
+        [
+          625,
+          1556
+        ]
+      ]
+    },
+    "confusion_matrix": [
+      [
+        1336,
+        806
+      ],
+      [
+        528,
+        1653
+      ]
+    ]
+  },
+  "clv_validation_metrics": {
+    "mae": 283.76,
+    "r2": 0.7543,
+    "value_capture_top_decile": 0.6391
+  },
+  "clv_test_metrics": {
+    "r2_score": 0.4887,
+    "mae": 437.94,
+    "rmse": 2362.3,
+    "value_capture_top_decile": 0.5798,
+    "train_time_sec": 0.428
+  }
+}

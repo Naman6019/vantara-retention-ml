@@ -1,0 +1,62 @@
+stages:
+  ingest:
+    cmd: python -m src.pipeline ingest
+    deps:
+      - src/data/loader.py
+      - src/data/cleaner.py
+    outs:
+      - data/interim/cleaned_transactions.parquet
+
+  features:
+    cmd: python -m src.features.builder
+    deps:
+      - data/interim/cleaned_transactions.parquet
+      - src/features/builder.py
+      - src/features/engagement.py
+    outs:
+      - data/processed/customer_features.parquet
+
+  snapshots:
+    cmd: python -m src.features.snapshots
+    deps:
+      - data/interim/cleaned_transactions.parquet
+      - src/features/snapshots.py
+    outs:
+      - data/processed/customer_snapshots.parquet
+      - models_artifacts/engagement_reference.json
+
+  train:
+    cmd: python -m src.models.train
+    deps:
+      - data/processed/customer_snapshots.parquet
+      - src/models/churn_models.py
+      - src/models/clv_regressor.py
+      - src/models/calibration.py
+      - src/models/train.py
+    outs:
+      - models_artifacts/model_card.json
+      - models_artifacts/churn_model_comparison.csv
+      - models_artifacts/clv_model_comparison.csv
+
+  segment:
+    cmd: python -m src.segmentation.clusterer
+    deps:
+      - data/processed/customer_features.parquet
+      - src/segmentation/clusterer.py
+    outs:
+      - data/processed/customer_segments.parquet
+
+  recommender:
+    cmd: python -m src.pipeline recommender
+    deps:
+      - data/interim/cleaned_transactions.parquet
+      - src/recommendations/products.py
+    outs:
+      - models_artifacts/product_recommender.joblib
+      - models_artifacts/product_recommender_metrics.json
+
+  score:
+    cmd: python -m src.serving.batch_score
+    deps:
+      - models_artifacts/model_card.json
+      - src/serving/batch_score.py

@@ -1,0 +1,5 @@
+Model,Val R² Score,Val MAE (£),Val RMSE (£),Top-Decile Value Capture,Training Time (s)
+LightGBM Tweedie,0.7543,283.76,1065.09,0.6391,0.356
+Random Forest Regressor,0.7986,314.04,964.24,0.6386,2.958
+Spend Baseline (last 90d),-0.03,372.06,2180.61,0.1253,0.0
+Ridge Regression (log1p),-2.6231,442.34,4089.81,0.584,0.016

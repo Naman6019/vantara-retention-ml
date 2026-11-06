@@ -1,0 +1,113 @@
+{
+  "selection": [
+    {
+      "cutoff": "2011-06-01",
+      "customers": 1519,
+      "k": 10,
+      "n_neighbours": 20,
+      "recommender": {
+        "recall": 0.05311995298683288,
+        "hit_rate": 0.3936800526662278,
+        "ndcg": 0.08450812343477197,
+        "catalogue_coverage": 0.3351466414380322
+      },
+      "popularity": {
+        "recall": 0.024396918155582387,
+        "hit_rate": 0.29427254772876893,
+        "ndcg": 0.042808350047530724,
+        "catalogue_coverage": 0.017975402081362345
+      }
+    },
+    {
+      "cutoff": "2011-06-01",
+      "customers": 1519,
+      "k": 10,
+      "n_neighbours": 50,
+      "recommender": {
+        "recall": 0.051576783153199454,
+        "hit_rate": 0.3838051349572087,
+        "ndcg": 0.0856114732004033,
+        "catalogue_coverage": 0.3088930936613056
+      },
+      "popularity": {
+        "recall": 0.024396918155582387,
+        "hit_rate": 0.29427254772876893,
+        "ndcg": 0.042808350047530724,
+        "catalogue_coverage": 0.017975402081362345
+      }
+    },
+    {
+      "cutoff": "2011-06-01",
+      "customers": 1519,
+      "k": 10,
+      "n_neighbours": 100,
+      "recommender": {
+        "recall": 0.0521231412649407,
+        "hit_rate": 0.40421329822251484,
+        "ndcg": 0.08560181250087104,
+        "catalogue_coverage": 0.28595080416272467
+      },
+      "popularity": {
+        "recall": 0.024396918155582387,
+        "hit_rate": 0.29427254772876893,
+        "ndcg": 0.042808350047530724,
+        "catalogue_coverage": 0.017975402081362345
+      }
+    },
+    {
+      "cutoff": "2011-06-01",
+      "customers": 1519,
+      "k": 10,
+      "n_neighbours": 200,
+      "recommender": {
+        "recall": 0.05057008479255287,
+        "hit_rate": 0.3989466754443713,
+        "ndcg": 0.08605244901940388,
+        "catalogue_coverage": 0.25496688741721857
+      },
+      "popularity": {
+        "recall": 0.024396918155582387,
+        "hit_rate": 0.29427254772876893,
+        "ndcg": 0.042808350047530724,
+        "catalogue_coverage": 0.017975402081362345
+      }
+    }
+  ],
+  "n_neighbours": 20,
+  "validation": {
+    "cutoff": "2011-06-01",
+    "customers": 1519,
+    "k": 10,
+    "n_neighbours": 20,
+    "recommender": {
+      "recall": 0.05311995298683288,
+      "hit_rate": 0.3936800526662278,
+      "ndcg": 0.08450812343477197,
+      "catalogue_coverage": 0.3351466414380322
+    },
+    "popularity": {
+      "recall": 0.024396918155582387,
+      "hit_rate": 0.29427254772876893,
+      "ndcg": 0.042808350047530724,
+      "catalogue_coverage": 0.017975402081362345
+    }
+  },
+  "test": {
+    "cutoff": "2011-09-01",
+    "customers": 2147,
+    "k": 10,
+    "n_neighbours": 20,
+    "recommender": {
+      "recall": 0.03704106630666154,
+      "hit_rate": 0.38658593386120166,
+      "ndcg": 0.07899544044166466,
+      "catalogue_coverage": 0.40571817562968004
+    },
+    "popularity": {
+      "recall": 0.017165406344926557,
+      "hit_rate": 0.29063809967396365,
+      "ndcg": 0.04361087736064963,
+      "catalogue_coverage": 0.01747220331291128
+    }
+  }
+}

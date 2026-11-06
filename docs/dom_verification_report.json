@@ -1,0 +1,129 @@
+{
+  "executive_overview": {
+    "view_title": "Executive Overview",
+    "h1": [
+      "\ud83c\udfe2 Vantara Retail Solutions",
+      "\ud83d\uded2 Customer Behavior Prediction Platform"
+    ],
+    "h2": [],
+    "h3": [
+      "Model Benchmark Performance (Production System)",
+      "Behavioral Feature Distributions"
+    ],
+    "kpis": [
+      {
+        "label": "Total Identified Customers",
+        "value": "5,225"
+      },
+      {
+        "label": "Observed 90-Day Churn Rate",
+        "value": "55.3%"
+      },
+      {
+        "label": "Avg Historical Spend",
+        "value": "\u00a32,493.50"
+      },
+      {
+        "label": "Avg Recency (Days)",
+        "value": "203.6"
+      }
+    ],
+    "plotly_visualizations": 2,
+    "interactive_sliders": 0,
+    "selectboxes": 0,
+    "data_tables": 0,
+    "file_uploaders": 0,
+    "buttons": 4,
+    "screenshot": "docs/ui_1_executive_overview.png"
+  },
+  "customer_segmentation": {
+    "view_title": "Customer Segmentation",
+    "h1": [
+      "\ud83c\udfe2 Vantara Retail Solutions",
+      "\ud83c\udfaf Behavioral Customer Segmentation"
+    ],
+    "h2": [],
+    "h3": [
+      "Segment Profile Summaries"
+    ],
+    "kpis": [],
+    "plotly_visualizations": 1,
+    "interactive_sliders": 0,
+    "selectboxes": 1,
+    "data_tables": 2,
+    "file_uploaders": 0,
+    "buttons": 7,
+    "screenshot": "docs/ui_2_customer_segmentation.png"
+  },
+  "churn_leaderboard": {
+    "view_title": "Churn Risk Leaderboard",
+    "h1": [
+      "\ud83c\udfe2 Vantara Retail Solutions",
+      "\u26a0\ufe0f Prioritized Retention Leaderboard"
+    ],
+    "h2": [],
+    "h3": [],
+    "kpis": [],
+    "plotly_visualizations": 0,
+    "interactive_sliders": 2,
+    "selectboxes": 0,
+    "data_tables": 2,
+    "file_uploaders": 0,
+    "buttons": 7,
+    "screenshot": "docs/ui_3_churn_leaderboard.png"
+  },
+  "revenue_trends": {
+    "view_title": "Revenue Trends & Forecast",
+    "h1": [
+      "\ud83c\udfe2 Vantara Retail Solutions",
+      "\ud83d\udcc8 Historical Sales & Moving Average Forecast"
+    ],
+    "h2": [],
+    "h3": [],
+    "kpis": [],
+    "plotly_visualizations": 1,
+    "interactive_sliders": 0,
+    "selectboxes": 0,
+    "data_tables": 0,
+    "file_uploaders": 0,
+    "buttons": 4,
+    "screenshot": "docs/ui_4_revenue_trends.png"
+  },
+  "customer_xai": {
+    "view_title": "Customer XAI Deep Dive",
+    "h1": [
+      "\ud83c\udfe2 Vantara Retail Solutions",
+      "\ud83d\udd0d Explainable AI (XAI) Individual Customer Inspector"
+    ],
+    "h2": [],
+    "h3": [
+      "Customer ID: 12346",
+      "\ud83e\udde0 Local SHAP Feature Attribution"
+    ],
+    "kpis": [],
+    "plotly_visualizations": 2,
+    "interactive_sliders": 0,
+    "selectboxes": 1,
+    "data_tables": 0,
+    "file_uploaders": 0,
+    "buttons": 4,
+    "screenshot": "docs/ui_5_customer_xai.png"
+  },
+  "batch_scoring": {
+    "view_title": "Batch Scoring & Export",
+    "h1": [
+      "\ud83c\udfe2 Vantara Retail Solutions",
+      "\ud83d\udcc1 Ad-Hoc Batch Scoring"
+    ],
+    "h2": [],
+    "h3": [],
+    "kpis": [],
+    "plotly_visualizations": 0,
+    "interactive_sliders": 0,
+    "selectboxes": 0,
+    "data_tables": 0,
+    "file_uploaders": 1,
+    "buttons": 6,
+    "screenshot": "docs/ui_6_batch_scoring.png"
+  }
+}

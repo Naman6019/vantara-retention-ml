@@ -1,0 +1,7 @@
+Model,Val ROC-AUC,Val Recall,Val Precision,Val F1,Val Accuracy,CV ROC-AUC (fwd-chain),use_scaled
+Logistic Regression,0.7967,0.7552,0.8099,0.7816,0.7325,0.7815,True
+Random Forest,0.7897,0.8143,0.794,0.804,0.7484,0.8347,False
+Decision Tree,0.7873,0.8041,0.8003,0.8022,0.7487,0.774,False
+XGBoost,0.7617,0.8077,0.7698,0.7883,0.7251,0.8869,False
+LightGBM,0.7602,0.7807,0.7805,0.7806,0.7218,0.8613,False
+KNN,0.7562,0.8158,0.7697,0.7921,0.7286,0.7976,True

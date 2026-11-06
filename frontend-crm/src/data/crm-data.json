@@ -1,0 +1,1012 @@
+{
+  "kpis": {
+    "total_accounts": 5225,
+    "churn_rate": 55.3,
+    "arpa": 2493.5,
+    "avg_recency": 203.6
+  },
+  "monthly_revenue": [
+    {
+      "month": "Dec 2009",
+      "revenue": 659045.16,
+      "sma_3": 659045.16
+    },
+    {
+      "month": "Jan 2010",
+      "revenue": 526630.16,
+      "sma_3": 526630.16
+    },
+    {
+      "month": "Feb 2010",
+      "revenue": 484194.82,
+      "sma_3": 556623.38
+    },
+    {
+      "month": "Mar 2010",
+      "revenue": 651698.62,
+      "sma_3": 554174.53
+    },
+    {
+      "month": "Apr 2010",
+      "revenue": 575541.28,
+      "sma_3": 570478.24
+    },
+    {
+      "month": "May 2010",
+      "revenue": 555948.88,
+      "sma_3": 594396.26
+    },
+    {
+      "month": "Jun 2010",
+      "revenue": 602944.85,
+      "sma_3": 578145.0
+    },
+    {
+      "month": "Jul 2010",
+      "revenue": 565142.59,
+      "sma_3": 574678.77
+    },
+    {
+      "month": "Aug 2010",
+      "revenue": 582807.88,
+      "sma_3": 583631.77
+    },
+    {
+      "month": "Sep 2010",
+      "revenue": 778584.59,
+      "sma_3": 642178.35
+    },
+    {
+      "month": "Oct 2010",
+      "revenue": 987091.88,
+      "sma_3": 782828.12
+    },
+    {
+      "month": "Nov 2010",
+      "revenue": 1122330.55,
+      "sma_3": 962669.01
+    },
+    {
+      "month": "Dec 2010",
+      "revenue": 548443.92,
+      "sma_3": 885955.45
+    },
+    {
+      "month": "Jan 2011",
+      "revenue": 471580.34,
+      "sma_3": 714118.27
+    },
+    {
+      "month": "Feb 2011",
+      "revenue": 434218.17,
+      "sma_3": 484747.48
+    },
+    {
+      "month": "Mar 2011",
+      "revenue": 573838.05,
+      "sma_3": 493212.19
+    },
+    {
+      "month": "Apr 2011",
+      "revenue": 421527.77,
+      "sma_3": 476528.0
+    },
+    {
+      "month": "May 2011",
+      "revenue": 650750.24,
+      "sma_3": 548705.35
+    },
+    {
+      "month": "Jun 2011",
+      "revenue": 641129.21,
+      "sma_3": 571135.74
+    },
+    {
+      "month": "Jul 2011",
+      "revenue": 580714.73,
+      "sma_3": 624198.06
+    },
+    {
+      "month": "Aug 2011",
+      "revenue": 612953.53,
+      "sma_3": 611599.16
+    },
+    {
+      "month": "Sep 2011",
+      "revenue": 921571.31,
+      "sma_3": 705079.86
+    },
+    {
+      "month": "Oct 2011",
+      "revenue": 959441.86,
+      "sma_3": 831322.23
+    },
+    {
+      "month": "Nov 2011",
+      "revenue": 1110808.79,
+      "sma_3": 997273.99
+    },
+    {
+      "month": "Dec 2011",
+      "revenue": 337201.58,
+      "sma_3": 802484.08
+    }
+  ],
+  "personas": [
+    {
+      "persona": "At-Risk / Lapsed High-Value",
+      "count": 84,
+      "avg_recency": 280.7,
+      "avg_frequency": 3.2,
+      "avg_spend": 1357.1,
+      "return_rate": 34.4,
+      "churn_rate": 73.8
+    },
+    {
+      "persona": "Dormant / Low-Engagement",
+      "count": 2399,
+      "avg_recency": 350.5,
+      "avg_frequency": 1.9,
+      "avg_spend": 590.07,
+      "return_rate": 0.71,
+      "churn_rate": 78.5
+    },
+    {
+      "persona": "High-Value Champions (VIP)",
+      "count": 2742,
+      "avg_recency": 72.7,
+      "avg_frequency": 9.0,
+      "avg_spend": 4193.64,
+      "return_rate": 1.08,
+      "churn_rate": 34.4
+    }
+  ],
+  "leaderboard": [
+    {
+      "customer_id": 16754,
+      "segment_persona": "High-Value Champions (VIP)",
+      "churn_prob": 87.6,
+      "spend": 54692.82,
+      "pred_clv": 9785.06,
+      "recency": 272.3,
+      "priority_score": 47934.0,
+      "playbook": "VIP Concierge Call & Executive Retention Offer"
+    },
+    {
+      "customer_id": 17850,
+      "segment_persona": "High-Value Champions (VIP)",
+      "churn_prob": 89.0,
+      "spend": 50407.77,
+      "pred_clv": 10543.28,
+      "recency": 272.4,
+      "priority_score": 44874.0,
+      "playbook": "VIP Concierge Call & Executive Retention Offer"
+    },
+    {
+      "customer_id": 13093,
+      "segment_persona": "High-Value Champions (VIP)",
+      "churn_prob": 60.7,
+      "spend": 53283.3,
+      "pred_clv": 12516.13,
+      "recency": 175.5,
+      "priority_score": 32328.0,
+      "playbook": "Priority Loyalty Incentive & CS Check-in"
+    },
+    {
+      "customer_id": 15098,
+      "segment_persona": "At-Risk / Lapsed High-Value",
+      "churn_prob": 71.8,
+      "spend": 39619.5,
+      "pred_clv": 9951.54,
+      "recency": 82.4,
+      "priority_score": 28443.0,
+      "playbook": "VIP Concierge Call & Executive Retention Offer"
+    },
+    {
+      "customer_id": 18102,
+      "segment_persona": "High-Value Champions (VIP)",
+      "churn_prob": 5.3,
+      "spend": 449288.57,
+      "pred_clv": 120888.9,
+      "recency": 26.3,
+      "priority_score": 23712.0,
+      "playbook": "VIP Upsell & Early Access Privilege"
+    },
+    {
+      "customer_id": 13902,
+      "segment_persona": "Dormant / Low-Engagement",
+      "churn_prob": 94.7,
+      "spend": 23345.66,
+      "pred_clv": 0.0,
+      "recency": 532.5,
+      "priority_score": 22105.0,
+      "playbook": "VIP Concierge Call & Executive Retention Offer"
+    },
+    {
+      "customer_id": 12482,
+      "segment_persona": "Dormant / Low-Engagement",
+      "churn_prob": 93.8,
+      "spend": 21941.72,
+      "pred_clv": 3317.27,
+      "recency": 476.3,
+      "priority_score": 20576.0,
+      "playbook": "VIP Concierge Call & Executive Retention Offer"
+    },
+    {
+      "customer_id": 15749,
+      "segment_persona": "At-Risk / Lapsed High-Value",
+      "churn_prob": 75.0,
+      "spend": 21535.9,
+      "pred_clv": 5737.22,
+      "recency": 135.4,
+      "priority_score": 16155.0,
+      "playbook": "VIP Concierge Call & Executive Retention Offer"
+    },
+    {
+      "customer_id": 18251,
+      "segment_persona": "High-Value Champions (VIP)",
+      "churn_prob": 65.0,
+      "spend": 21964.14,
+      "pred_clv": 3791.75,
+      "recency": 345.4,
+      "priority_score": 14285.0,
+      "playbook": "Priority Loyalty Incentive & CS Check-in"
+    },
+    {
+      "customer_id": 17448,
+      "segment_persona": "High-Value Champions (VIP)",
+      "churn_prob": 92.0,
+      "spend": 14375.01,
+      "pred_clv": 2080.02,
+      "recency": 429.4,
+      "priority_score": 13224.0,
+      "playbook": "VIP Concierge Call & Executive Retention Offer"
+    },
+    {
+      "customer_id": 15808,
+      "segment_persona": "High-Value Champions (VIP)",
+      "churn_prob": 74.4,
+      "spend": 17038.95,
+      "pred_clv": 3914.2,
+      "recency": 206.4,
+      "priority_score": 12684.0,
+      "playbook": "VIP Concierge Call & Executive Retention Offer"
+    },
+    {
+      "customer_id": 13564,
+      "segment_persona": "High-Value Champions (VIP)",
+      "churn_prob": 77.1,
+      "spend": 15613.1,
+      "pred_clv": 2918.19,
+      "recency": 254.3,
+      "priority_score": 12044.0,
+      "playbook": "VIP Concierge Call & Executive Retention Offer"
+    },
+    {
+      "customer_id": 18087,
+      "segment_persona": "High-Value Champions (VIP)",
+      "churn_prob": 77.9,
+      "spend": 13563.62,
+      "pred_clv": 3067.3,
+      "recency": 190.6,
+      "priority_score": 10563.0,
+      "playbook": "VIP Concierge Call & Executive Retention Offer"
+    },
+    {
+      "customer_id": 15523,
+      "segment_persona": "High-Value Champions (VIP)",
+      "churn_prob": 62.9,
+      "spend": 16707.23,
+      "pred_clv": 3256.18,
+      "recency": 288.4,
+      "priority_score": 10511.0,
+      "playbook": "Priority Loyalty Incentive & CS Check-in"
+    },
+    {
+      "customer_id": 14646,
+      "segment_persona": "High-Value Champions (VIP)",
+      "churn_prob": 2.5,
+      "spend": 419847.66,
+      "pred_clv": 94455.13,
+      "recency": 5.4,
+      "priority_score": 10455.0,
+      "playbook": "VIP Upsell & Early Access Privilege"
+    },
+    {
+      "customer_id": 14156,
+      "segment_persona": "High-Value Champions (VIP)",
+      "churn_prob": 3.8,
+      "spend": 267505.34,
+      "pred_clv": 63450.0,
+      "recency": 14.4,
+      "priority_score": 10293.0,
+      "playbook": "VIP Upsell & Early Access Privilege"
+    },
+    {
+      "customer_id": 18052,
+      "segment_persona": "Dormant / Low-Engagement",
+      "churn_prob": 93.8,
+      "spend": 10877.18,
+      "pred_clv": 5430.11,
+      "recency": 464.5,
+      "priority_score": 10207.0,
+      "playbook": "VIP Concierge Call & Executive Retention Offer"
+    },
+    {
+      "customer_id": 13027,
+      "segment_persona": "High-Value Champions (VIP)",
+      "churn_prob": 57.4,
+      "spend": 17143.2,
+      "pred_clv": 865.89,
+      "recency": 13.6,
+      "priority_score": 9835.0,
+      "playbook": "Priority Loyalty Incentive & CS Check-in"
+    },
+    {
+      "customer_id": 13687,
+      "segment_persona": "Dormant / Low-Engagement",
+      "churn_prob": 78.3,
+      "spend": 11880.84,
+      "pred_clv": 24212.52,
+      "recency": 338.3,
+      "priority_score": 9301.0,
+      "playbook": "VIP Concierge Call & Executive Retention Offer"
+    },
+    {
+      "customer_id": 14091,
+      "segment_persona": "Dormant / Low-Engagement",
+      "churn_prob": 95.6,
+      "spend": 9530.08,
+      "pred_clv": 1906.61,
+      "recency": 554.4,
+      "priority_score": 9113.0,
+      "playbook": "VIP Concierge Call & Executive Retention Offer"
+    },
+    {
+      "customer_id": 14063,
+      "segment_persona": "Dormant / Low-Engagement",
+      "churn_prob": 91.2,
+      "spend": 9471.5,
+      "pred_clv": 2203.36,
+      "recency": 586.5,
+      "priority_score": 8639.0,
+      "playbook": "VIP Concierge Call & Executive Retention Offer"
+    },
+    {
+      "customer_id": 14134,
+      "segment_persona": "High-Value Champions (VIP)",
+      "churn_prob": 76.2,
+      "spend": 11123.35,
+      "pred_clv": 2437.19,
+      "recency": 282.5,
+      "priority_score": 8471.0,
+      "playbook": "VIP Concierge Call & Executive Retention Offer"
+    },
+    {
+      "customer_id": 12980,
+      "segment_persona": "High-Value Champions (VIP)",
+      "churn_prob": 51.6,
+      "spend": 15909.39,
+      "pred_clv": 4383.87,
+      "recency": 57.6,
+      "priority_score": 8208.0,
+      "playbook": "Priority Loyalty Incentive & CS Check-in"
+    },
+    {
+      "customer_id": 14160,
+      "segment_persona": "Dormant / Low-Engagement",
+      "churn_prob": 93.0,
+      "spend": 8421.47,
+      "pred_clv": 1801.81,
+      "recency": 510.4,
+      "priority_score": 7832.0,
+      "playbook": "VIP Concierge Call & Executive Retention Offer"
+    },
+    {
+      "customer_id": 15768,
+      "segment_persona": "High-Value Champions (VIP)",
+      "churn_prob": 45.3,
+      "spend": 15307.26,
+      "pred_clv": 3438.63,
+      "recency": 15.6,
+      "priority_score": 6931.0,
+      "playbook": "Relationship Nurturing & Standard Engagement"
+    },
+    {
+      "customer_id": 14439,
+      "segment_persona": "High-Value Champions (VIP)",
+      "churn_prob": 72.6,
+      "spend": 9443.04,
+      "pred_clv": 2182.08,
+      "recency": 219.5,
+      "priority_score": 6860.0,
+      "playbook": "VIP Concierge Call & Executive Retention Offer"
+    },
+    {
+      "customer_id": 14028,
+      "segment_persona": "At-Risk / Lapsed High-Value",
+      "churn_prob": 94.9,
+      "spend": 6786.0,
+      "pred_clv": 1866.42,
+      "recency": 450.4,
+      "priority_score": 6440.0,
+      "playbook": "VIP Concierge Call & Executive Retention Offer"
+    },
+    {
+      "customer_id": 12415,
+      "segment_persona": "High-Value Champions (VIP)",
+      "churn_prob": 5.3,
+      "spend": 117512.65,
+      "pred_clv": 27420.51,
+      "recency": 13.6,
+      "priority_score": 6177.0,
+      "playbook": "VIP Upsell & Early Access Privilege"
+    },
+    {
+      "customer_id": 12590,
+      "segment_persona": "High-Value Champions (VIP)",
+      "churn_prob": 65.0,
+      "spend": 9330.48,
+      "pred_clv": 1943.06,
+      "recency": 111.4,
+      "priority_score": 6066.0,
+      "playbook": "Priority Loyalty Incentive & CS Check-in"
+    },
+    {
+      "customer_id": 13340,
+      "segment_persona": "High-Value Champions (VIP)",
+      "churn_prob": 29.1,
+      "spend": 20593.62,
+      "pred_clv": 5138.33,
+      "recency": 5.6,
+      "priority_score": 5983.0,
+      "playbook": "VIP Upsell & Early Access Privilege"
+    },
+    {
+      "customer_id": 17857,
+      "segment_persona": "High-Value Champions (VIP)",
+      "churn_prob": 42.4,
+      "spend": 14088.42,
+      "pred_clv": 3357.74,
+      "recency": 9.4,
+      "priority_score": 5973.0,
+      "playbook": "Relationship Nurturing & Standard Engagement"
+    },
+    {
+      "customer_id": 12357,
+      "segment_persona": "Dormant / Low-Engagement",
+      "churn_prob": 52.1,
+      "spend": 11229.99,
+      "pred_clv": 1845.11,
+      "recency": 288.6,
+      "priority_score": 5856.0,
+      "playbook": "Priority Loyalty Incentive & CS Check-in"
+    },
+    {
+      "customer_id": 15413,
+      "segment_persona": "Dormant / Low-Engagement",
+      "churn_prob": 86.1,
+      "spend": 6798.72,
+      "pred_clv": 1521.55,
+      "recency": 591.5,
+      "priority_score": 5856.0,
+      "playbook": "VIP Concierge Call & Executive Retention Offer"
+    },
+    {
+      "customer_id": 13952,
+      "segment_persona": "High-Value Champions (VIP)",
+      "churn_prob": 44.5,
+      "spend": 12790.89,
+      "pred_clv": 2848.26,
+      "recency": 117.6,
+      "priority_score": 5691.0,
+      "playbook": "Relationship Nurturing & Standard Engagement"
+    },
+    {
+      "customer_id": 14045,
+      "segment_persona": "High-Value Champions (VIP)",
+      "churn_prob": 60.5,
+      "spend": 9334.23,
+      "pred_clv": 2320.07,
+      "recency": 9.4,
+      "priority_score": 5647.0,
+      "playbook": "Priority Loyalty Incentive & CS Check-in"
+    },
+    {
+      "customer_id": 13935,
+      "segment_persona": "Dormant / Low-Engagement",
+      "churn_prob": 91.1,
+      "spend": 6116.92,
+      "pred_clv": 1287.16,
+      "recency": 496.5,
+      "priority_score": 5570.0,
+      "playbook": "VIP Concierge Call & Executive Retention Offer"
+    },
+    {
+      "customer_id": 13206,
+      "segment_persona": "High-Value Champions (VIP)",
+      "churn_prob": 64.9,
+      "spend": 8308.19,
+      "pred_clv": 1323.18,
+      "recency": 300.3,
+      "priority_score": 5395.0,
+      "playbook": "Priority Loyalty Incentive & CS Check-in"
+    },
+    {
+      "customer_id": 13715,
+      "segment_persona": "High-Value Champions (VIP)",
+      "churn_prob": 66.4,
+      "spend": 8108.09,
+      "pred_clv": 1587.22,
+      "recency": 181.2,
+      "priority_score": 5386.0,
+      "playbook": "Priority Loyalty Incentive & CS Check-in"
+    },
+    {
+      "customer_id": 17940,
+      "segment_persona": "High-Value Champions (VIP)",
+      "churn_prob": 18.7,
+      "spend": 28197.58,
+      "pred_clv": 856.67,
+      "recency": 8.4,
+      "priority_score": 5277.0,
+      "playbook": "VIP Upsell & Early Access Privilege"
+    },
+    {
+      "customer_id": 12835,
+      "segment_persona": "High-Value Champions (VIP)",
+      "churn_prob": 87.3,
+      "spend": 5972.19,
+      "pred_clv": 755.49,
+      "recency": 327.5,
+      "priority_score": 5213.0,
+      "playbook": "VIP Concierge Call & Executive Retention Offer"
+    },
+    {
+      "customer_id": 15061,
+      "segment_persona": "High-Value Champions (VIP)",
+      "churn_prob": 4.9,
+      "spend": 107082.39,
+      "pred_clv": 24004.81,
+      "recency": 27.6,
+      "priority_score": 5197.0,
+      "playbook": "VIP Upsell & Early Access Privilege"
+    },
+    {
+      "customer_id": 17504,
+      "segment_persona": "High-Value Champions (VIP)",
+      "churn_prob": 53.8,
+      "spend": 9238.42,
+      "pred_clv": 1837.2,
+      "recency": 106.5,
+      "priority_score": 4966.0,
+      "playbook": "Priority Loyalty Incentive & CS Check-in"
+    },
+    {
+      "customer_id": 18008,
+      "segment_persona": "High-Value Champions (VIP)",
+      "churn_prob": 24.6,
+      "spend": 19708.3,
+      "pred_clv": 4795.91,
+      "recency": 103.3,
+      "priority_score": 4856.0,
+      "playbook": "VIP Upsell & Early Access Privilege"
+    },
+    {
+      "customer_id": 17230,
+      "segment_persona": "High-Value Champions (VIP)",
+      "churn_prob": 52.0,
+      "spend": 9159.45,
+      "pred_clv": 2028.78,
+      "recency": 164.3,
+      "priority_score": 4759.0,
+      "playbook": "Priority Loyalty Incentive & CS Check-in"
+    },
+    {
+      "customer_id": 14249,
+      "segment_persona": "High-Value Champions (VIP)",
+      "churn_prob": 85.5,
+      "spend": 5400.46,
+      "pred_clv": 1058.07,
+      "recency": 310.5,
+      "priority_score": 4615.0,
+      "playbook": "VIP Concierge Call & Executive Retention Offer"
+    },
+    {
+      "customer_id": 14828,
+      "segment_persona": "High-Value Champions (VIP)",
+      "churn_prob": 46.9,
+      "spend": 9803.46,
+      "pred_clv": 1772.97,
+      "recency": 96.6,
+      "priority_score": 4596.0,
+      "playbook": "Relationship Nurturing & Standard Engagement"
+    },
+    {
+      "customer_id": 15032,
+      "segment_persona": "High-Value Champions (VIP)",
+      "churn_prob": 43.4,
+      "spend": 10515.05,
+      "pred_clv": 2390.88,
+      "recency": 156.4,
+      "priority_score": 4566.0,
+      "playbook": "Relationship Nurturing & Standard Engagement"
+    },
+    {
+      "customer_id": 16684,
+      "segment_persona": "High-Value Champions (VIP)",
+      "churn_prob": 4.2,
+      "spend": 108760.23,
+      "pred_clv": 24179.2,
+      "recency": 33.4,
+      "priority_score": 4559.0,
+      "playbook": "VIP Upsell & Early Access Privilege"
+    },
+    {
+      "customer_id": 14911,
+      "segment_persona": "High-Value Champions (VIP)",
+      "churn_prob": 2.3,
+      "spend": 197797.24,
+      "pred_clv": 43128.37,
+      "recency": 5.4,
+      "priority_score": 4465.0,
+      "playbook": "VIP Upsell & Early Access Privilege"
+    },
+    {
+      "customer_id": 13694,
+      "segment_persona": "High-Value Champions (VIP)",
+      "churn_prob": 2.5,
+      "spend": 171300.96,
+      "pred_clv": 30858.11,
+      "recency": 7.4,
+      "priority_score": 4268.0,
+      "playbook": "VIP Upsell & Early Access Privilege"
+    }
+  ],
+  "customer_profiles": {
+    "12346": {
+      "customer_id": 12346,
+      "persona": "Dormant / Low-Engagement",
+      "churn_prob": 75.1,
+      "pred_clv": 0.0,
+      "spend": 368.36,
+      "frequency": 11,
+      "recency": 429.4,
+      "engagement": 40.6,
+      "playbook": "Automated Win-Back Email Sequence & Survey",
+      "drivers": [
+        {
+          "feature": "Recency",
+          "value": 429.42,
+          "shap": 0.541
+        },
+        {
+          "feature": "Monetary Avg",
+          "value": 33.49,
+          "shap": -0.289
+        },
+        {
+          "feature": "Engagement Score",
+          "value": 40.62,
+          "shap": 0.266
+        },
+        {
+          "feature": "Interpurchase Interval Std",
+          "value": 36.62,
+          "shap": -0.109
+        },
+        {
+          "feature": "Avg Basket Size",
+          "value": 6.36,
+          "shap": 0.107
+        },
+        {
+          "feature": "Interpurchase Interval Mean",
+          "value": 19.62,
+          "shap": 0.101
+        }
+      ]
+    },
+    "16754": {
+      "customer_id": 16754,
+      "persona": "High-Value Champions (VIP)",
+      "churn_prob": 87.6,
+      "pred_clv": 9785.06,
+      "spend": 54692.82,
+      "frequency": 29,
+      "recency": 272.3,
+      "engagement": 74.2,
+      "playbook": "VIP Concierge Call & Executive Retention Offer",
+      "drivers": [
+        {
+          "feature": "Recency",
+          "value": 272.27,
+          "shap": 0.724
+        },
+        {
+          "feature": "Engagement Score",
+          "value": 74.24,
+          "shap": -0.312
+        },
+        {
+          "feature": "Monetary Total",
+          "value": 54692.82,
+          "shap": 0.292
+        },
+        {
+          "feature": "Customer Age Days",
+          "value": 541.52,
+          "shap": 0.279
+        },
+        {
+          "feature": "Monetary Avg",
+          "value": 1885.96,
+          "shap": 0.173
+        },
+        {
+          "feature": "Interpurchase Interval Mean",
+          "value": 9.62,
+          "shap": 0.157
+        }
+      ]
+    },
+    "17850": {
+      "customer_id": 17850,
+      "persona": "High-Value Champions (VIP)",
+      "churn_prob": 89.0,
+      "pred_clv": 10543.28,
+      "spend": 50407.77,
+      "frequency": 155,
+      "recency": 272.4,
+      "engagement": 74.8,
+      "playbook": "VIP Concierge Call & Executive Retention Offer",
+      "drivers": [
+        {
+          "feature": "Recency",
+          "value": 272.36,
+          "shap": 0.81
+        },
+        {
+          "feature": "Engagement Score",
+          "value": 74.79,
+          "shap": -0.367
+        },
+        {
+          "feature": "Frequency",
+          "value": 155.0,
+          "shap": 0.354
+        },
+        {
+          "feature": "Customer Age Days",
+          "value": 634.48,
+          "shap": 0.334
+        },
+        {
+          "feature": "Monetary Total",
+          "value": 50407.77,
+          "shap": 0.311
+        },
+        {
+          "feature": "Interpurchase Interval Std",
+          "value": 10.83,
+          "shap": 0.192
+        }
+      ]
+    },
+    "13093": {
+      "customer_id": 13093,
+      "persona": "High-Value Champions (VIP)",
+      "churn_prob": 60.7,
+      "pred_clv": 12516.13,
+      "spend": 53283.3,
+      "frequency": 55,
+      "recency": 175.5,
+      "engagement": 78.7,
+      "playbook": "Priority Loyalty Incentive & CS Check-in",
+      "drivers": [
+        {
+          "feature": "Engagement Score",
+          "value": 78.72,
+          "shap": -0.954
+        },
+        {
+          "feature": "Recency",
+          "value": 175.49,
+          "shap": 0.745
+        },
+        {
+          "feature": "Frequency",
+          "value": 55.0,
+          "shap": 0.232
+        },
+        {
+          "feature": "Seasonal Concentration",
+          "value": 0.46,
+          "shap": -0.203
+        },
+        {
+          "feature": "Customer Age Days",
+          "value": 635.56,
+          "shap": 0.194
+        },
+        {
+          "feature": "Interpurchase Interval Std",
+          "value": 7.29,
+          "shap": 0.175
+        }
+      ]
+    },
+    "15098": {
+      "customer_id": 15098,
+      "persona": "At-Risk / Lapsed High-Value",
+      "churn_prob": 71.8,
+      "pred_clv": 9951.54,
+      "spend": 39619.5,
+      "frequency": 3,
+      "recency": 82.4,
+      "engagement": 72.0,
+      "playbook": "VIP Concierge Call & Executive Retention Offer",
+      "drivers": [
+        {
+          "feature": "Engagement Score",
+          "value": 72.01,
+          "shap": -0.851
+        },
+        {
+          "feature": "Unique Skus Bought",
+          "value": 1.0,
+          "shap": 0.523
+        },
+        {
+          "feature": "Monetary Avg",
+          "value": 13206.5,
+          "shap": 0.329
+        },
+        {
+          "feature": "Return Rate",
+          "value": 0.33,
+          "shap": 0.252
+        },
+        {
+          "feature": "Total Items Bought",
+          "value": 121.0,
+          "shap": 0.239
+        },
+        {
+          "feature": "Seasonal Concentration",
+          "value": 0.0,
+          "shap": 0.235
+        }
+      ]
+    },
+    "18251": {
+      "customer_id": 18251,
+      "persona": "High-Value Champions (VIP)",
+      "churn_prob": 65.0,
+      "pred_clv": 3791.75,
+      "spend": 21964.14,
+      "frequency": 8,
+      "recency": 345.4,
+      "engagement": 62.0,
+      "playbook": "Priority Loyalty Incentive & CS Check-in",
+      "drivers": [
+        {
+          "feature": "Seasonal Concentration",
+          "value": 0.15,
+          "shap": 0.293
+        },
+        {
+          "feature": "Monetary Avg",
+          "value": 2745.52,
+          "shap": 0.189
+        },
+        {
+          "feature": "Customer Age Days",
+          "value": 617.5,
+          "shap": 0.181
+        },
+        {
+          "feature": "Unique Skus Bought",
+          "value": 77.0,
+          "shap": -0.17
+        },
+        {
+          "feature": "Monetary Total",
+          "value": 21964.14,
+          "shap": 0.141
+        },
+        {
+          "feature": "Recency",
+          "value": 345.44,
+          "shap": 0.111
+        }
+      ]
+    },
+    "14911": {
+      "customer_id": 14911,
+      "persona": "High-Value Champions (VIP)",
+      "churn_prob": 2.3,
+      "pred_clv": 43128.37,
+      "spend": 197797.24,
+      "frequency": 280,
+      "recency": 5.4,
+      "engagement": 99.2,
+      "playbook": "VIP Upsell & Early Access Privilege",
+      "drivers": [
+        {
+          "feature": "Engagement Score",
+          "value": 99.18,
+          "shap": -2.421
+        },
+        {
+          "feature": "Recency",
+          "value": 5.4,
+          "shap": -0.766
+        },
+        {
+          "feature": "Unique Skus Bought",
+          "value": 2165.0,
+          "shap": -0.274
+        },
+        {
+          "feature": "Interpurchase Interval Std",
+          "value": 3.11,
+          "shap": -0.226
+        },
+        {
+          "feature": "Monetary Avg",
+          "value": 706.42,
+          "shap": 0.202
+        },
+        {
+          "feature": "Total Items Bought",
+          "value": 107133.0,
+          "shap": -0.189
+        }
+      ]
+    },
+    "17448": {
+      "customer_id": 17448,
+      "persona": "High-Value Champions (VIP)",
+      "churn_prob": 92.0,
+      "pred_clv": 2080.02,
+      "spend": 14375.01,
+      "frequency": 41,
+      "recency": 429.4,
+      "engagement": 64.1,
+      "playbook": "VIP Concierge Call & Executive Retention Offer",
+      "drivers": [
+        {
+          "feature": "Recency",
+          "value": 429.42,
+          "shap": 1.065
+        },
+        {
+          "feature": "Monetary Total",
+          "value": 14375.01,
+          "shap": 0.313
+        },
+        {
+          "feature": "Unique Skus Bought",
+          "value": 568.0,
+          "shap": -0.3
+        },
+        {
+          "feature": "Customer Age Days",
+          "value": 545.27,
+          "shap": 0.279
+        },
+        {
+          "feature": "Seasonal Concentration",
+          "value": 0.0,
+          "shap": 0.268
+        },
+        {
+          "feature": "Frequency",
+          "value": 41.0,
+          "shap": 0.22
+        }
+      ]
+    }
+  }
+}

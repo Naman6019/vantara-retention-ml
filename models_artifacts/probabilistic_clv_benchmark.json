@@ -1,0 +1,6 @@
+{
+  "validation_cutoff": "2011-09-01",
+  "customers": 2255,
+  "mae": 659.26,
+  "top_decile_value_capture": 0.2388
+}

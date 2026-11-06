@@ -1,0 +1,98 @@
+{
+  "low_risk": {
+    "customer_id": 12748.0,
+    "calibrated_probability": 0.0,
+    "prediction": "retained",
+    "top_drivers": [
+      {
+        "feature": "frequency",
+        "value": 242.0,
+        "shap_impact": -0.1752
+      },
+      {
+        "feature": "unique_skus_bought",
+        "value": 1815.0,
+        "shap_impact": -0.1323
+      },
+      {
+        "feature": "engagement_score",
+        "value": 99.41,
+        "shap_impact": -0.1196
+      },
+      {
+        "feature": "monetary_total",
+        "value": 29241.74,
+        "shap_impact": -0.0441
+      },
+      {
+        "feature": "recency",
+        "value": 1.5,
+        "shap_impact": -0.0251
+      }
+    ]
+  },
+  "high_risk": {
+    "customer_id": 13672.0,
+    "calibrated_probability": 1.0,
+    "prediction": "churn",
+    "top_drivers": [
+      {
+        "feature": "interpurchase_interval_std",
+        "value": 259.574,
+        "shap_impact": 0.1428
+      },
+      {
+        "feature": "engagement_score",
+        "value": 30.45,
+        "shap_impact": 0.1254
+      },
+      {
+        "feature": "interpurchase_interval_mean",
+        "value": 214.546,
+        "shap_impact": 0.0746
+      },
+      {
+        "feature": "seasonal_concentration",
+        "value": 1.0,
+        "shap_impact": 0.0487
+      },
+      {
+        "feature": "recency",
+        "value": 201.422,
+        "shap_impact": 0.0248
+      }
+    ]
+  },
+  "borderline": {
+    "customer_id": 12372.0,
+    "calibrated_probability": 0.6709,
+    "prediction": "churn",
+    "top_drivers": [
+      {
+        "feature": "engagement_score",
+        "value": 47.17,
+        "shap_impact": 0.0465
+      },
+      {
+        "feature": "interpurchase_interval_std",
+        "value": 0.0,
+        "shap_impact": -0.0411
+      },
+      {
+        "feature": "customer_age_days",
+        "value": 196.468,
+        "shap_impact": 0.0334
+      },
+      {
+        "feature": "purchase_frequency_trend",
+        "value": -0.5,
+        "shap_impact": -0.0318
+      },
+      {
+        "feature": "seasonal_concentration",
+        "value": 0.0,
+        "shap_impact": -0.0312
+      }
+    ]
+  }
+}

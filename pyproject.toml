@@ -1,0 +1,42 @@
+[project]
+name = "vantara-customer-intelligence"
+version = "1.1.0"
+description = "Customer behavior prediction platform: calibrated churn, 90-day value, value-at-risk targeting."
+requires-python = ">=3.10"
+
+[tool.ruff]
+line-length = 120
+target-version = "py310"
+extend-exclude = ["notebooks"]
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "UP", "B", "C4"]
+ignore = [
+  "E501",   # line length handled by the formatter
+  "UP006",  # typing.List vs list: the codebase uses typing generics deliberately
+  "UP035",  # typing.Dict import deprecation
+  "UP007",  # Optional[X] vs X | None
+  "UP045",
+  "E741",   # ambiguous variable names (l, I) in numeric code
+  "C408",   # dict() call style
+]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/*" = ["B011", "BLE001"]
+"frontend/*" = ["E402"]
+"api/routers/*" = ["B008"]  # FastAPI Depends/File in argument defaults is idiomatic
+
+[tool.mypy]
+python_version = "3.10"
+ignore_missing_imports = true
+warn_unused_ignores = false
+disallow_untyped_defs = false
+explicit_package_bases = true
+namespace_packages = true
+mypy_path = "."
+exclude = "tests/|notebooks/"
+
+[tool.pytest.ini_options]
+pythonpath = "."
+testpaths = ["tests"]
+addopts = "-q"

@@ -1,0 +1,69 @@
+# ============================================================
+# Docker build context exclusions
+# Keeps the image lean and the build context small.
+# ============================================================
+
+# Version control & CI metadata
+.git
+.gitignore
+.github
+.dockerignore
+
+# Python caches & bytecode
+__pycache__/
+**/__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+.env
+.env.*
+
+# Testing, linting & coverage artifacts
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+.coverage.*
+htmlcov/
+coverage.xml
+.tox/
+.nox/
+
+# Jupyter notebook checkpoints
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+
+# Logs
+logs/
+*.log
+
+# Large raw dataset downloads (re-fetched at runtime by src/data/loader.py)
+data/raw/
+
+# Intermediate build products not needed for serving, EXCEPT the cleaned
+# transactions the batch scorer reads to build today's snapshot offline.
+data/interim/*
+!data/interim/cleaned_transactions.parquet
+
+# Unused React CRM prototype (not part of the Dockerized stack)
+frontend-crm/
+
+# Notebooks, docs, design source files & scratch material
+notebooks/
+docs/
+*.docx
+scratch_doc.docx
+extracted_requirements.md
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

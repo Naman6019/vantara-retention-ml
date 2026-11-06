@@ -1,0 +1,72 @@
+# Retention recommendation rules (plan D5).
+#
+# Rules are evaluated top-to-bottom; the FIRST match wins and its action is
+# returned with a concrete reason. Edit this file to change campaign policy —
+# no Python changes required.
+#
+# Supported `when` conditions (all specified conditions must hold):
+#   risk_tier:      one of [low, moderate, high]   (from calibrated P(churn))
+#   value_tier:     one of [low, mid, high]         (from predicted 90-day value quantiles)
+#   drivers_any:    list of feature names; matches if ANY is in the top SHAP drivers
+#   segment_any:    list of persona substrings; matches if the persona contains any
+#   min_monetary:   numeric; customer's historical monetary_total must be >= value
+#
+# Available interpolated reason fields:
+#   {recency} {frequency} {monetary_total} {monetary_avg}
+#   {return_rate} {discount_sensitivity} {predicted_value} {churn_probability}
+
+version: "1.0"
+rules:
+  - id: high_value_high_risk_recency
+    when:
+      value_tier: [high]
+      risk_tier: [high]
+      drivers_any: [recency]
+    action: "Account manager call within 7 days"
+    channel: "Account Manager"
+    reason: "High-value customer going quiet — recency is the top churn driver"
+
+  - id: high_value_high_risk
+    when:
+      value_tier: [high]
+      risk_tier: [high]
+    action: "Priority retention outreach by senior account manager"
+    channel: "Account Manager"
+    reason: "High predicted value combined with high calibrated churn risk"
+
+  - id: return_rate_driver
+    when:
+      drivers_any: [return_rate]
+    action: "Service-recovery outreach, no discount"
+    channel: "Retention Desk"
+    reason: "Return rate is a leading indicator of dissatisfaction"
+
+  - id: discount_sensitive_mid_value
+    when:
+      value_tier: [mid]
+      drivers_any: [discount_sensitivity]
+    action: "Targeted 10% voucher"
+    channel: "Email"
+    reason: "Prices historically influence this customer's purchasing"
+
+  - id: low_value_high_risk
+    when:
+      value_tier: [low]
+      risk_tier: [high]
+    action: "Automated win-back email"
+    channel: "Email (automated)"
+    reason: "Low value; automated channel is the efficient option"
+
+  - id: low_risk_high_value
+    when:
+      value_tier: [high]
+      risk_tier: [low]
+    action: "Loyalty / early-access offer, no discount"
+    channel: "Loyalty Program"
+    reason: "Healthy high-value customer — avoid margin leakage"
+
+  - id: fallback
+    when: {}
+    action: "Monitor only"
+    channel: "None"
+    reason: "No retention trigger matched"
